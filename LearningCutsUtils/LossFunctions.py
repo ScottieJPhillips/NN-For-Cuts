@@ -95,8 +95,8 @@ def loss_fn (y_pred, y_true, features, net,
 
 
 def effic_loss_fn(y_pred, y_true, features, net,
-                  alpha=1., beta=1., gamma=0.001, epsilon=0.001,
-                  debug=False):
+                  alpha, beta, gamma, epsilon,
+                  debug):
 
     # probably a better way to do this, but works for now
     sumefficlosses=None    
